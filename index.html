@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawson Landscaping & Maintenance | Premier Perth Landscapers</title>
+    <meta name="description" content="Perth's premier landscape design, limestone retaining walls, paving, turf laying & garden maintenance specialists. 100% satisfaction guaranteed. Get a free quote!">
+    <meta name="keywords" content="landscapers Perth, landscaping Perth, garden maintenance Perth, paving Perth, retaining walls Perth, turf Perth">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Pro/Free Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema.org LocalBusiness JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LandscapeCompany",
+      "name": "Dawson Landscaping & Maintenance",
+      "image": "https://dawsonlandscaping.com.au/assets/logo-dark-bg.png",
+      "@id": "https://dawsonlandscaping.com.au",
+      "url": "https://dawsonlandscaping.com.au",
+      "telephone": "+61400123456",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "St Georges Terrace",
+        "addressLocality": "Perth",
+        "addressRegion": "WA",
+        "postalCode": "6000",
+        "addressCountry": "AU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -31.9505,
+        "longitude": 115.8605
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "07:00",
+        "closes": "17:30"
+      },
+      "sameAs": [
+        "https://www.facebook.com/dawsonlandscapingperth",
+        "https://www.instagram.com/dawsonlandscapingperth",
+        "https://www.youtube.com/@dawsonlandscapingperth",
+        "https://www.houzz.com.au/pro/dawsonlandscaping"
+      ],
+      "areaServed": "Perth Metropolitan Area"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Left Side Floating Social Media Bar (Agency Feature) -->
+    <aside class="floating-social-sidebar">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="social-icon fb"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-icon ig"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://google.com" target="_blank" aria-label="Google Business" class="social-icon gb"><i class="fa-brands fa-google"></i></a>
+        <a href="https://houzz.com" target="_blank" aria-label="Houzz Portfolio" class="social-icon hz"><i class="fa-solid fa-house-chimney"></i></a>
+        <a href="https://youtube.com" target="_blank" aria-label="YouTube Channel" class="social-icon yt"><i class="fa-brands fa-youtube"></i></a>
+    </aside>
+
+    <!-- Top Announcement & Contact Bar with Social Icons -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-info">
+                <span><i class="fa-solid fa-location-dot accent-icon"></i> Servicing All Perth Suburbs & Surrounds</span>
+                <span><i class="fa-solid fa-clock accent-icon"></i> Mon - Sat: 7:00 AM - 5:30 PM</span>
+                <span><i class="fa-solid fa-star gold-icon"></i> 4.9/5 Rating (85+ Google Reviews)</span>
+            </div>
+            <div class="top-right-group">
+                <div class="top-social-links">
+                    <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <a href="tel:0400123456" class="top-phone-btn" onclick="trackGAEvent('click_to_call', 'top_bar')">
+                    <i class="fa-solid fa-phone"></i> Direct: <strong>(0400) 123 456</strong>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header (Clean Agency Standard) -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <div class="logo-wrapper">
+                    <img src="assets/logo-light-bg.png" alt="Dawson Landscaping & Maintenance Logo" class="brand-logo-img">
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" onclick="switchTab(event, 'home')">Home</a>
+                <a href="#about" class="nav-link" onclick="switchTab(event, 'about')">About Us</a>
+                <div class="nav-dropdown">
+                    <a href="#services" class="nav-link dropdown-toggle">Services <i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#services" onclick="switchTab(event, 'services')"><i class="fa-solid fa-compass-drafting"></i> Full Landscape Construction</a>
+                        <a href="#services" onclick="switchTab(event, 'services')"><i class="fa-solid fa-cubes"></i> Paving & Retaining Walls</a>
+                        <a href="#services" onclick="switchTab(event, 'services')"><i class="fa-solid fa-seedling"></i> Turf & Reticulation</a>
+                        <a href="#services" onclick="switchTab(event, 'services')"><i class="fa-solid fa-scissors"></i> Garden Maintenance</a>
+                    </div>
+                </div>
+                <a href="#portfolio" class="nav-link" onclick="switchTab(event, 'portfolio')">Before & After</a>
+                <a href="#calculator" class="nav-link" onclick="switchTab(event, 'calculator')">Instant Estimator</a>
+                <a href="#reviews" class="nav-link" onclick="switchTab(event, 'reviews')">Reviews</a>
+                <a href="#contact" class="nav-link" onclick="switchTab(event, 'contact')">Contact</a>
+            </nav>
+
+            <div class="nav-cta">
+                <a href="#quote-form" class="btn btn-primary btn-glow" onclick="openQuoteModal('Header CTA')">
+                    <i class="fa-solid fa-calculator"></i> Get Free Quote
+                </a>
+            </div>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Views Container for Multi-Page Feel -->
+    <main>
+        <!-- HOME SECTION -->
+        <div id="page-home" class="page-view active">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="container hero-grid">
+                    <div class="hero-content">
+                        <div class="badge-pill">
+                            <i class="fa-solid fa-award"></i> Perth's #1 Rated Landscaping Specialists
+                        </div>
+                        <h1 class="hero-title">
+                            Transform Your Outdoor Space Into A <span>Stunning Sanctuary</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Custom garden design, structural limestone retaining walls, paving, lush turf, and routine maintenance tailored for Perth's soil & climate.
+                        </p>
+
+                        <div class="hero-trust-list">
+                            <div class="trust-item"><i class="fa-solid fa-circle-check"></i> Free On-Site Consultation & Transparent Quote</div>
+                            <div class="trust-item"><i class="fa-solid fa-circle-check"></i> Fully Insured ($20M Public Liability) & Licensed Trades</div>
+                            <div class="trust-item"><i class="fa-solid fa-circle-check"></i> Waterwise Approved Irrigation Specialists</div>
+                        </div>
+
+                        <div class="hero-cta-buttons">
+                            <a href="tel:0400123456" class="btn btn-call" onclick="trackGAEvent('click_to_call', 'hero')">
+                                <i class="fa-solid fa-phone-volume"></i> Call (0400) 123 456
+                            </a>
+                            <a href="#portfolio" class="btn btn-secondary" onclick="switchTab(event, 'portfolio')">
+                                View Projects Gallery <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Hero Instant Quote Form Card -->
+                    <div class="hero-form-card" id="quote-form">
+                        <div class="form-header">
+                            <span class="form-tag">FREE NO-OBLIGATION ESTIMATE</span>
+                            <h3>Request Your Free Quote</h3>
+                            <p>Fast response guaranteed within 2 hours!</p>
+                        </div>
+                        <form id="heroLeadForm" onsubmit="handleFormSubmit(event, 'Hero Form')">
+                            <div class="form-group">
+                                <label for="hero-name"><i class="fa-solid fa-user"></i> Full Name *</label>
+                                <input type="text" id="hero-name" required placeholder="e.g. Michael Smith">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="hero-phone"><i class="fa-solid fa-phone"></i> Phone Number *</label>
+                                <input type="tel" id="hero-phone" required placeholder="e.g. 0412 345 678">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="hero-suburb"><i class="fa-solid fa-location-dot"></i> Perth Suburb *</label>
+                                <input type="text" id="hero-suburb" required placeholder="e.g. Joondalup, Cottesloe, Scarborough">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="hero-service"><i class="fa-solid fa-screwdriver-wrench"></i> Required Service</label>
+                                <select id="hero-service" required>
+                                    <option value="" disabled selected>Select Service...</option>
+                                    <option value="Complete Landscape Transformation">Complete Backyard Overhaul</option>
+                                    <option value="Paving & Retaining Walls">Paving & Retaining Walls</option>
+                                    <option value="Turf & Reticulation">Turf & Smart Reticulation</option>
+                                    <option value="Garden Maintenance">Garden Maintenance & Pruning</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-submit btn-block">
+                                <span>Get My Free Quote Now</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            <p class="form-privacy"><i class="fa-solid fa-lock"></i> 100% Privacy Guaranteed. No Spam Ever.</p>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Trust Badges & Accreditations Bar -->
+            <section class="accreditations-bar">
+                <div class="container acc-grid">
+                    <div class="acc-item">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <div>
+                            <strong>$20M Fully Insured</strong>
+                            <span>Complete peace of mind</span>
+                        </div>
+                    </div>
+                    <div class="acc-item">
+                        <i class="fa-solid fa-trophy"></i>
+                        <div>
+                            <strong>Master Landscapers WA</strong>
+                            <span>Certified Trade Professionals</span>
+                        </div>
+                    </div>
+                    <div class="acc-item">
+                        <i class="fa-solid fa-droplet"></i>
+                        <div>
+                            <strong>Waterwise Approved</strong>
+                            <span>Perth Climate Experts</span>
+                        </div>
+                    </div>
+                    <div class="acc-item">
+                        <i class="fa-solid fa-star gold"></i>
+                        <div>
+                            <strong>4.9 ★ Google Rating</strong>
+                            <span>85+ Local Verified Reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section class="services-section" id="services">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <span class="section-subtitle">OUR EXPERTISE</span>
+                        <h2 class="section-title">Premium Landscaping Services in Perth</h2>
+                        <p class="section-desc">From initial 3D design and excavation to stone paving, turf laying, and long-term garden upkeep.</p>
+                    </div>
+
+                    <div class="services-grid">
+                        <!-- Service Card 1 -->
+                        <div class="service-card">
+                            <div class="service-img-wrapper">
+                                <img src="assets/service_construction.jpg" alt="Landscape Construction Perth">
+                                <span class="service-tag">Popular</span>
+                            </div>
+                            <div class="service-body">
+                                <div class="service-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                                <h3>Full Landscape Construction</h3>
+                                <p>End-to-end yard transformations customized for Perth sandy soils and sunny climate.</p>
+                                <ul class="service-features">
+                                    <li><i class="fa-solid fa-check"></i> Custom 2D/3D Design Layouts</li>
+                                    <li><i class="fa-solid fa-check"></i> Excavation & Earthworks</li>
+                                    <li><i class="fa-solid fa-check"></i> Waterwise Australian Planting</li>
+                                </ul>
+                                <button class="btn-text" onclick="openQuoteModal('Landscape Construction')">Request Detailed Quote &rarr;</button>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 2 -->
+                        <div class="service-card">
+                            <div class="service-img-wrapper">
+                                <img src="assets/service_paving.jpg" alt="Paving and Retaining Walls Perth">
+                            </div>
+                            <div class="service-body">
+                                <div class="service-icon"><i class="fa-solid fa-cubes"></i></div>
+                                <h3>Paving & Retaining Walls</h3>
+                                <p>Engineered limestone retaining walls, modern patio paving, and poolside stonework.</p>
+                                <ul class="service-features">
+                                    <li><i class="fa-solid fa-check"></i> Limestone & Reconstituted Block</li>
+                                    <li><i class="fa-solid fa-check"></i> Honed Concrete & Stone Pavers</li>
+                                    <li><i class="fa-solid fa-check"></i> Structural Retaining Walls</li>
+                                </ul>
+                                <button class="btn-text" onclick="openQuoteModal('Paving & Retaining Walls')">Request Detailed Quote &rarr;</button>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 3 -->
+                        <div class="service-card">
+                            <div class="service-img-wrapper">
+                                <img src="assets/service_turf.jpg" alt="Turf and Reticulation Perth">
+                            </div>
+                            <div class="service-body">
+                                <div class="service-icon"><i class="fa-solid fa-seedling"></i></div>
+                                <h3>Turf & Smart Reticulation</h3>
+                                <p>Instant Sir Walter Buffalo or Wintergreen couch lawn, plus automated smart water systems.</p>
+                                <ul class="service-features">
+                                    <li><i class="fa-solid fa-check"></i> Premium Real & Synthetic Lawn</li>
+                                    <li><i class="fa-solid fa-check"></i> Automated WiFi Irrigation</li>
+                                    <li><i class="fa-solid fa-check"></i> Soil Conditioning & Underlay</li>
+                                </ul>
+                                <button class="btn-text" onclick="openQuoteModal('Turf & Reticulation')">Request Detailed Quote &rarr;</button>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 4 -->
+                        <div class="service-card">
+                            <div class="service-img-wrapper">
+                                <img src="assets/service_maintenance.jpg" alt="Garden Maintenance Perth">
+                            </div>
+                            <div class="service-body">
+                                <div class="service-icon"><i class="fa-solid fa-scissors"></i></div>
+                                <h3>Garden Maintenance & Upkeep</h3>
+                                <p>Scheduled care packages to keep your residential or commercial property spotless.</p>
+                                <ul class="service-features">
+                                    <li><i class="fa-solid fa-check"></i> Hedging, Pruning & Tree Care</li>
+                                    <li><i class="fa-solid fa-check"></i> Lawn Mowing & Precision Edging</li>
+                                    <li><i class="fa-solid fa-check"></i> Weed Control & Fertilization</li>
+                                </ul>
+                                <button class="btn-text" onclick="openQuoteModal('Garden Maintenance')">Request Detailed Quote &rarr;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Before & After Interactive Showcase -->
+            <section class="before-after-section" id="portfolio">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <span class="section-subtitle">PROVEN RESULTS</span>
+                        <h2 class="section-title">See The Transformation: Before & After</h2>
+                        <p class="section-desc">Drag the interactive slider below to explore how our team turns unkept yards into outdoor paradises.</p>
+                    </div>
+
+                    <div class="ba-slider-wrapper">
+                        <div class="ba-slider" id="baSlider">
+                            <div class="ba-image ba-before">
+                                <img src="assets/before.jpg" alt="Perth Backyard Before Dawson Landscaping">
+                                <span class="ba-label label-before">BEFORE</span>
+                            </div>
+                            <div class="ba-image ba-after" id="baAfterContainer">
+                                <img src="assets/after.jpg" alt="Transformed Perth Backyard After Dawson Landscaping">
+                                <span class="ba-label label-after">AFTER</span>
+                            </div>
+                            <div class="ba-handle" id="baHandle">
+                                <div class="ba-handle-line"></div>
+                                <div class="ba-handle-button">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="ba-handle-line"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ba-details text-center">
+                        <h4>Scarborough Coastal Residence Transformation</h4>
+                        <p>Converted a sandy, weed-infested backyard into a low-maintenance entertainer's haven with honed paver patio, raised limestone garden beds, and fresh Sir Walter Buffalo turf.</p>
+                        <a href="#quote-form" class="btn btn-primary margin-top" onclick="openQuoteModal('Before/After Inquiry')">Want A Backyard Transformation? Get Free Estimate &rarr;</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Instant Lead Calculator Section -->
+            <section class="calculator-section" id="calculator">
+                <div class="container">
+                    <div class="calc-card">
+                        <div class="calc-header text-center">
+                            <span class="section-subtitle">INSTANT ESTIMATOR</span>
+                            <h2>Perth Landscaping Cost Calculator</h2>
+                            <p>Select your project details to get a instant estimated cost range.</p>
+                        </div>
+
+                        <div class="calc-steps">
+                            <div class="calc-step" id="calcStep1">
+                                <h4>1. Select Your Project Type:</h4>
+                                <div class="calc-options">
+                                    <div class="calc-option-card selected" onclick="selectCalcOption(this, 'type', 'Full Backyard Overhaul', 4500)">
+                                        <i class="fa-solid fa-tree"></i>
+                                        <span>Full Backyard Overhaul</span>
+                                    </div>
+                                    <div class="calc-option-card" onclick="selectCalcOption(this, 'type', 'Paving & Retaining Walls', 3200)">
+                                        <i class="fa-solid fa-cubes"></i>
+                                        <span>Paving & Retaining Walls</span>
+                                    </div>
+                                    <div class="calc-option-card" onclick="selectCalcOption(this, 'type', 'Turf & Reticulation', 1800)">
+                                        <i class="fa-solid fa-seedling"></i>
+                                        <span>Turf & Reticulation</span>
+                                    </div>
+                                    <div class="calc-option-card" onclick="selectCalcOption(this, 'type', 'Garden Maintenance', 350)">
+                                        <i class="fa-solid fa-scissors"></i>
+                                        <span>Regular Garden Care</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc-step">
+                                <h4>2. Approximate Area Size (sq meters):</h4>
+                                <div class="calc-options">
+                                    <div class="calc-option-card selected" onclick="selectCalcOption(this, 'size', 'Small (< 50 sqm)', 1)">
+                                        <span>Small (< 50 sqm)</span>
+                                    </div>
+                                    <div class="calc-option-card" onclick="selectCalcOption(this, 'size', 'Medium (50-150 sqm)', 1.8)">
+                                        <span>Medium (50-150 sqm)</span>
+                                    </div>
+                                    <div class="calc-option-card" onclick="selectCalcOption(this, 'size', 'Large (150+ sqm)', 2.8)">
+                                        <span>Large (150+ sqm)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc-result-box">
+                                <div class="result-display">
+                                    <span class="result-label">Estimated Price Range:</span>
+                                    <span class="result-price" id="calcPriceDisplay">$4,500 - $6,075 AUD</span>
+                                </div>
+                                <div class="result-cta">
+                                    <button type="button" class="btn btn-primary" onclick="openQuoteModal('Calculator Quote Lock')">
+                                        Lock In This Estimate & Book Site Visit &rarr;
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Social Media Feed & Verified Reviews Section -->
+            <section class="reviews-section" id="reviews">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <span class="section-subtitle">TESTIMONIALS & SOCIAL</span>
+                        <h2 class="section-title">Trusted By Homeowners Across Perth</h2>
+                        <div class="google-rating-badge">
+                            <i class="fa-brands fa-google google-icon"></i>
+                            <span class="stars">★★★★★</span>
+                            <span>4.9 / 5.0 (85+ Verified Reviews)</span>
+                        </div>
+                    </div>
+
+                    <div class="reviews-grid">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-avatar">JM</div>
+                                <div class="reviewer-meta">
+                                    <h4>Jason Miller</h4>
+                                    <span class="reviewer-suburb">City Beach, Perth</span>
+                                </div>
+                                <div class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified Client</div>
+                            </div>
+                            <div class="review-stars">★★★★★</div>
+                            <p class="review-text">"Dawson Landscaping completely transformed our front yard in City Beach. They laid Sir Walter turf, built a limestone retaining wall, and planted drought-resistant Perth natives. Work finished right on time!"</p>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-avatar">SK</div>
+                                <div class="reviewer-meta">
+                                    <h4>Sarah & Kevin</h4>
+                                    <span class="reviewer-suburb">Subiaco, Perth</span>
+                                </div>
+                                <div class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified Client</div>
+                            </div>
+                            <div class="review-stars">★★★★★</div>
+                            <p class="review-text">"Needed paving around our pool and new automated reticulation before summer. The Dawson team was polite, professional, and left our driveway spotless."</p>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-avatar">RP</div>
+                                <div class="reviewer-meta">
+                                    <h4>Robert Pfennig</h4>
+                                    <span class="reviewer-suburb">Fremantle, Perth</span>
+                                </div>
+                                <div class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified Client</div>
+                            </div>
+                            <div class="review-stars">★★★★★</div>
+                            <p class="review-text">"They do regular fortnightly lawn and garden maintenance for our commercial property. Extremely reliable and excellent communication."</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Links Banner -->
+                    <div class="social-connect-card">
+                        <div class="social-connect-content">
+                            <h3><i class="fa-brands fa-instagram"></i> Follow Our Daily Work On Social Media</h3>
+                            <p>Check out our latest Perth backyard transformations, reel walkthroughs, and gardening tips.</p>
+                        </div>
+                        <div class="social-connect-btns">
+                            <a href="https://instagram.com" target="_blank" class="btn btn-ig"><i class="fa-brands fa-instagram"></i> Follow Instagram</a>
+                            <a href="https://facebook.com" target="_blank" class="btn btn-fb"><i class="fa-brands fa-facebook"></i> Facebook Page</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-cta-banner">
+            <div class="container footer-cta-grid">
+                <div>
+                    <h2>Ready To Upgrade Your Perth Property?</h2>
+                    <p>Speak to our master landscaper today or request your free consultation.</p>
+                </div>
+                <div class="footer-cta-actions">
+                    <a href="tel:0400123456" class="btn btn-call-large" onclick="trackGAEvent('click_to_call', 'footer')">
+                        <i class="fa-solid fa-phone"></i> Call (0400) 123 456
+                    </a>
+                    <a href="#quote-form" class="btn btn-primary-light" onclick="openQuoteModal('Footer CTA')">
+                        Request Quote Online
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-main">
+            <div class="footer-col">
+                <div class="brand-logo footer-logo">
+                    <img src="assets/logo-dark-bg.png" alt="Dawson Landscaping Logo" class="brand-logo-img-footer">
+                </div>
+                <p class="footer-desc">Perth’s premier custom landscaping, paving, turf laying, and garden maintenance specialists. Built for Western Australian outdoors.</p>
+                <div class="footer-social-bar">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="#services">Full Landscape Construction</a></li>
+                    <li><a href="#services">Limestone Retaining Walls</a></li>
+                    <li><a href="#services">Paving & Hardscaping</a></li>
+                    <li><a href="#services">Natural & Synthetic Turf</a></li>
+                    <li><a href="#services">Automated Reticulation Systems</a></li>
+                    <li><a href="#services">Garden Maintenance Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Details</h4>
+                <ul class="contact-info-list">
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:0400123456">0400 123 456</a></li>
+                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@dawsonlandscaping.com.au">info@dawsonlandscaping.com.au</a></li>
+                    <li><i class="fa-solid fa-location-dot"></i> Perth Metropolitan Area, WA</li>
+                    <li><i class="fa-solid fa-clock"></i> Mon - Sat: 7:00 AM - 5:30 PM</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 Dawson Landscaping & Maintenance. All Rights Reserved.</p>
+                <p class="seo-credit">Optimised for <strong>"Landscapers Perth"</strong> Local SEO</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Sticky Quick Bar for Mobile Devices -->
+    <div class="mobile-sticky-bar">
+        <a href="tel:0400123456" class="sticky-btn sticky-call" onclick="trackGAEvent('click_to_call', 'mobile_sticky')">
+            <i class="fa-solid fa-phone"></i> Call Now
+        </a>
+        <a href="#quote-form" class="sticky-btn sticky-quote" onclick="openQuoteModal('Mobile Sticky')">
+            <i class="fa-solid fa-paper-plane"></i> Free Quote
+        </a>
+    </div>
+
+    <!-- Modal Popup Form -->
+    <div class="modal-overlay" id="quoteModal">
+        <div class="modal-card">
+            <button class="modal-close" onclick="closeQuoteModal()">&times;</button>
+            <div class="modal-header">
+                <h3 id="modalTitle">Request Free Quote</h3>
+                <p>Fill out this 30-second form for a prompt call back from our Perth team.</p>
+            </div>
+            <form id="modalLeadForm" onsubmit="handleFormSubmit(event, 'Modal Form')">
+                <input type="hidden" id="modal-service-name" value="">
+                <div class="form-group">
+                    <label for="modal-name">Full Name *</label>
+                    <input type="text" id="modal-name" required placeholder="John Smith">
+                </div>
+                <div class="form-group">
+                    <label for="modal-phone">Phone Number *</label>
+                    <input type="tel" id="modal-phone" required placeholder="0400 123 456">
+                </div>
+                <div class="form-group">
+                    <label for="modal-suburb">Perth Suburb *</label>
+                    <input type="text" id="modal-suburb" required placeholder="e.g. Scarborough, Cottesloe">
+                </div>
+                <div class="form-group">
+                    <label for="modal-notes">Project Details</label>
+                    <textarea id="modal-notes" rows="3" placeholder="Tell us what you would like done..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit btn-block">
+                    Submit Request <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-notification" id="toastNotification">
+        <div class="toast-content">
+            <i class="fa-solid fa-circle-check toast-icon"></i>
+            <div>
+                <h4 id="toastTitle">Enquiry Received!</h4>
+                <p id="toastMessage">Our Perth team will call you back shortly.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Integrated Live Chat Widget (Lead Booster) -->
+    <div class="chat-widget-container">
+        <button class="chat-widget-btn" id="chatWidgetBtn" onclick="toggleChatWidget()" aria-label="Open Live Chat">
+            <span class="chat-badge-pulse"></span>
+            <i class="fa-solid fa-comments chat-icon-open"></i>
+            <i class="fa-solid fa-xmark chat-icon-close" style="display: none;"></i>
+        </button>
+        
+        <div class="chat-widget-box" id="chatWidgetBox">
+            <div class="chat-box-header">
+                <div class="chat-agent-info">
+                    <div class="agent-avatar-wrapper">
+                        <img src="assets/favicon.png" alt="Dawson Support Agent">
+                        <span class="online-indicator"></span>
+                    </div>
+                    <div>
+                        <h4>Dawson Perth Team</h4>
+                        <span class="agent-status">Online • Typically replies in 2 mins</span>
+                    </div>
+                </div>
+                <button class="chat-box-close" onclick="toggleChatWidget()">&times;</button>
+            </div>
+            <div class="chat-box-body">
+                <div class="chat-message agent-message">
+                    <p>G'day! 👋 Looking for landscaping or maintenance in Perth? How can we help you today?</p>
+                    <span class="chat-time">Just now</span>
+                </div>
+            </div>
+            <div class="chat-quick-actions">
+                <button class="chat-action-btn" onclick="quickChatReply('I need a backyard quote')">💰 Get Free Quote</button>
+                <button class="chat-action-btn" onclick="quickChatReply('Can someone call me back?')">📞 Call Me Back</button>
+            </div>
+            <form class="chat-box-footer" onsubmit="handleChatSubmit(event)">
+                <input type="text" id="chatInput" placeholder="Type your message or phone number..." required>
+                <button type="submit" aria-label="Send Message"><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

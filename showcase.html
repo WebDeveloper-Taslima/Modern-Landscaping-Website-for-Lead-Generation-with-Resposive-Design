@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawson Landscaping - LinkedIn Banner | Designed By Taslima Akter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #12160E;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+
+        /* Standard LinkedIn Image Post Dimension (1200px x 630px) */
+        .linkedin-banner {
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(135deg, #FAFBF7 0%, #EFF2E6 100%);
+            border-radius: 20px;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+            padding: 2.2rem 2.5rem;
+            display: grid;
+            grid-template-columns: 310px 1fr 240px;
+            gap: 1.8rem;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #D8DCCB;
+        }
+
+        /* Left Side Info Panel */
+        .banner-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.9rem;
+            z-index: 5;
+        }
+
+        .brand-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.4rem;
+            font-weight: 900;
+            color: #1B2613;
+            line-height: 1.05;
+            letter-spacing: -0.5px;
+        }
+
+        .brand-title span {
+            color: #D49726;
+        }
+
+        .brand-sub {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: #37421F;
+            margin-top: -0.2rem;
+        }
+
+        .brand-desc {
+            font-size: 0.82rem;
+            color: #555E4B;
+            line-height: 1.5;
+        }
+
+        .tech-badges {
+            display: flex;
+            gap: 0.6rem;
+            margin-top: 0.2rem;
+        }
+
+        .badge-card {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: #FFFFFF;
+            padding: 0.45rem 0.85rem;
+            border-radius: 10px;
+            font-size: 0.78rem;
+            font-weight: 800;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+            border: 1px solid #E2E4D8;
+        }
+
+        .badge-wp i { color: #21759B; font-size: 1.1rem; }
+        .badge-el i { color: #92003B; font-size: 1.1rem; }
+
+        .designer-credit {
+            margin-top: 0.8rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            background-color: #1B2613;
+            color: white;
+            padding: 0.65rem 1.2rem;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 0.85rem;
+            box-shadow: 0 6px 18px rgba(27, 38, 19, 0.2);
+            width: fit-content;
+        }
+
+        .designer-credit i {
+            color: #D49726;
+        }
+
+        /* Middle Multi-Device Stage */
+        .device-stage {
+            position: relative;
+            width: 100%;
+            height: 480px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Desktop Monitor Frame */
+        .monitor-frame {
+            position: absolute;
+            width: 390px;
+            height: 240px;
+            top: 25px;
+            right: 0px;
+            background: #181818;
+            border-radius: 12px 12px 0 0;
+            padding: 8px 8px 0 8px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+            border: 2px solid #2C2C2C;
+        }
+
+        .monitor-screen {
+            width: 100%;
+            height: 100%;
+            border-radius: 4px 4px 0 0;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .monitor-screen img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .monitor-stand {
+            position: absolute;
+            bottom: 200px;
+            right: 175px;
+            width: 50px;
+            height: 20px;
+            background: #2B2B2B;
+        }
+
+        .monitor-base {
+            position: absolute;
+            bottom: 192px;
+            right: 130px;
+            width: 140px;
+            height: 8px;
+            background: #111;
+            border-radius: 3px;
+        }
+
+        /* Laptop Frame */
+        .laptop-frame {
+            position: absolute;
+            width: 340px;
+            height: 210px;
+            bottom: 45px;
+            left: 0px;
+            background: #1A1A1A;
+            border-radius: 12px 12px 0 0;
+            padding: 6px 6px 0 6px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+            z-index: 6;
+            border: 2px solid #333;
+        }
+
+        .laptop-screen {
+            width: 100%;
+            height: 100%;
+            border-radius: 4px 4px 0 0;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .laptop-screen img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .laptop-base {
+            position: absolute;
+            bottom: 28px;
+            left: -20px;
+            width: 380px;
+            height: 17px;
+            background: linear-gradient(180deg, #D1D5DB 0%, #9CA3AF 100%);
+            border-radius: 0 0 12px 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            z-index: 6;
+        }
+
+        /* Mobile Smartphone Frame */
+        .mobile-frame {
+            position: absolute;
+            width: 95px;
+            height: 185px;
+            left: 165px;
+            bottom: 15px;
+            background: #000;
+            border-radius: 20px;
+            padding: 5px;
+            box-shadow: 0 16px 36px rgba(0,0,0,0.35);
+            border: 2px solid #333;
+            z-index: 10;
+        }
+
+        .mobile-screen {
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .mobile-screen img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Right Side Vertical Full-Length Webpage Card */
+        .fullpage-card {
+            width: 240px;
+            height: 480px;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+            border: 1px solid #DCE0D2;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-browser-bar {
+            height: 26px;
+            background: #E8EADF;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            gap: 5px;
+            border-bottom: 1px solid #D3D6C7;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+        .dot-red { background: #FF5F56; }
+        .dot-yellow { background: #FFBD2E; }
+        .dot-green { background: #27C93F; }
+
+        .card-body {
+            flex-grow: 1;
+            overflow-y: auto;
+            background: #fff;
+        }
+
+        .card-body img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Standard LinkedIn Banner Box (1200px x 630px) -->
+    <div class="linkedin-banner">
+        <!-- Left Side Info -->
+        <div class="banner-info">
+            <h1 class="brand-title">DAWSON <span>LANDSCAPING</span></h1>
+            <h2 class="brand-sub">Elementor Pro Website & Lead System</h2>
+            <p class="brand-desc">Modern, Responsive & High-Converting Landscaping Website Built with Elementor Pro. Tailored for Perth local business leads.</p>
+            
+            <div class="tech-badges">
+                <div class="badge-card badge-wp"><i class="fa-brands fa-wordpress"></i> WordPress</div>
+                <div class="badge-card badge-el"><i class="fa-brands fa-elementor"></i> Elementor Pro</div>
+            </div>
+
+            <div class="designer-credit">
+                <i class="fa-solid fa-circle-check"></i> Designed By Taslima Akter
+            </div>
+        </div>
+
+        <!-- Middle Multi-Device Display -->
+        <div class="device-stage">
+            <!-- Monitor -->
+            <div class="monitor-frame">
+                <div class="monitor-screen">
+                    <img src="assets/dawson_full_website.png" alt="Dawson Landscaping Monitor View">
+                </div>
+            </div>
+
+            <!-- Laptop -->
+            <div class="laptop-frame">
+                <div class="laptop-screen">
+                    <img src="assets/dawson_full_website.png" alt="Dawson Landscaping Laptop View">
+                </div>
+            </div>
+            <div class="laptop-base"></div>
+
+            <!-- Mobile Smartphone -->
+            <div class="mobile-frame">
+                <div class="mobile-screen">
+                    <img src="assets/dawson_full_website.png" alt="Dawson Landscaping Mobile View">
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side Full Webpage Preview Card -->
+        <div class="fullpage-card">
+            <div class="card-browser-bar">
+                <div class="dot dot-red"></div>
+                <div class="dot dot-yellow"></div>
+                <div class="dot dot-green"></div>
+            </div>
+            <div class="card-body">
+                <img src="assets/dawson_full_website.png" alt="Dawson Landscaping Full Webpage Preview">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
